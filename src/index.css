@@ -39,3 +39,22 @@ body {
   border-radius: 7px 7px 0 0;
   display: block;
 }
+
+.landmark-title {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  margin: 0.5rem;
+}
+
+.landmark-title:hover{
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.desc {
+  margin: 1rem
+}
