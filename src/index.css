@@ -1,17 +1,41 @@
 body {
-  background-color: blue;
+  background-color: lightblue;
 }
 
-.stats-container {
+.landmarks-container {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.stats-card {
-    background-color: lightblue;
+.landmark-card {
+    background-color: white;
     border-radius: 7px;
-    padding: 1%;
-    margin: 1%;
-    width: 100%;
+    border-width: 2px;
+    border-color: white;
+    width: 30%;
     text-align: center;
+    margin-top: 20px;
+    
+}
+
+@media (max-width: 768px) {
+  .landmark-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .landmark-card {
+    width: 90%;
+  }
+}
+
+.landmark-image {
+  width: 100%;          
+  height: 300px;       
+  object-fit: cover;  
+  border-radius: 7px 7px 0 0;
+  display: block;
 }
